@@ -2282,7 +2282,7 @@ ssize_t AudioHardware::AudioStreamInVoip::read( void* buffer, ssize_t bytes)
       ALOGE("read:: read size requested is less than min input buffer size");
       return 0;
     }
-    
+
     if (!mSetupDevice) {
         mSetupDevice = true;
         mHardware->setupDeviceforVoipCall(true);
